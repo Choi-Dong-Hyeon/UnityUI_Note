@@ -4,5 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ScrollView.unity
+    guid: 37628c547aa037f4a956cb86f8941992
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 0b83aac95f73bf94a99432b39f48dbb0, type: 2}
