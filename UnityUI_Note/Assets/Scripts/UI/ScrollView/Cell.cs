@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class CellData
+public class CellData 
 {
     public int Index { get; set; }
 

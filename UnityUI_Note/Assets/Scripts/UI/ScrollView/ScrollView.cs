@@ -16,20 +16,20 @@ public class ScrollView : MonoBehaviour
     void Start()
     {
 
-        //실제 프리팹 을 생성한다
+        //실제 프리팹 을 생성한다           
         for(int i=0; i<100; i++)
         {
             Instantiate(_cellItem,_contents.transform);
         }
 
-        //리슽트에 CellData의 인덱스번호를 매겨 생성한다.
+        //리스트에 CellData의 인덱스번호를 매겨 생성한다. 
         for (int i = 0; i < 100; i++)
         {
             _celldata.Add(new CellData(i));
         }
 
-        //Contents산하에 생성한 프리팹 자식들을 전부 배열에 넣는다.
-        Cell[] _cell = _contents.GetComponentsInChildren<Cell>();
+        //Contents산하에 생성한 프리팹 자식들을 전부 배열에 넣는다. 
+        Cell[] _cell = _contents.GetComponentsInChildren<Cell>(); 
 
         //각 Cell의 인덱스번째에 해당하는 스크립트에 존재하는 CellData를 채우기위해 여기서 채워준 리스트를 배열형태로 바꾸어 넘겨준다.
         for (int i = 0; i < _cell.Length; i++)

@@ -1,20 +1,19 @@
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
+using static Unity.VisualScripting.Cooldown;
 
 public class Test : MonoBehaviour
 {
+    [SerializeField] int a = 10;
+
+    public Data ww;
 
     void Start()
     {
-   
+       
 
-        Addressables.LoadAssetAsync<GameObject>("Cube").Completed += (obj) =>
-        {
-            Addressables.InstantiateAsync(obj.Result.name);
-
-        };
-
+        
+        
+       
 
     }
 
