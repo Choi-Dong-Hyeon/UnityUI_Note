@@ -18,10 +18,10 @@ public partial class DataTable
 
     public DataTable Clone()
     {
-        var data=new DataTable();
+        DataTable data = new DataTable();
 
-        data.index = index;
-        data.name = name;
+        data.Index = this.Index;
+        data.Name = this.Name;
 
         return data;
     }

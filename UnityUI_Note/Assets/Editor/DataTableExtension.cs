@@ -1,49 +1,33 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 
 
 [CreateAssetMenu]
 public partial class Data
 {
-
-    [SerializeField] public List<DataTable> _copy = new List<DataTable>();
     [SerializeField] public DataDict _dataDic;
+    DataList _dataList;
+    [SerializeField] Data _data;
 
-
-    public string aaa;
-
-    public Data()
+    public void UpdateData()
     {
-        _copy = DataTable;
+        for (int i = 0; i < 6; i++)
+        {
+            DataTable.Add(new DataTable());
+            DataTable[i] = _data.DataTable[i];
+        }
 
-    }
-
-
-    public void SetData()
-    {
-        DataTable = _copy;
-
-        _copy = DataTable;
-
-        aaa = "11111;";
-        DataList da = new DataList();
-
-        da.DataListe = DataTable;
+        _dataList.DataListe = _data.DataTable;
 
         for (int i = 0; i < 3; i++)
         {
-            _dataDic.Add(i, da, i);
+            _dataDic.Add(i, _dataList, null);
 
         }
     }
 
 }
-
-
-
 
 
 [Serializable]
@@ -54,4 +38,4 @@ public class DataList
 }
 
 [Serializable]
-public class DataDict : SerializableDictionary<int, DataList, int> { }
+public class DataDict : SerializableDictionary<int, DataList, string> { }

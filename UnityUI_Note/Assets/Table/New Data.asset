@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95aeb9d0f2301c44cbf0c7a917f1b59f, type: 3}
+  m_Name: New Data
+  m_EditorClassIdentifier: 
+  DataTable:
+  - index: 1
+    name: A
+  - index: 1
+    name: B
+  - index: 1
+    name: C
+  - index: 2
+    name: D
+  - index: 2
+    name: E
+  - index: 2
+    name: F
+  _dataDic:
+    array:
+    - Key: 0
+      Value1:
+        _dataList:
+        - index: 1
+          name: A
+        - index: 1
+          name: B
+        - index: 1
+          name: C
+        - index: 2
+          name: D
+        - index: 2
+          name: E
+        - index: 2
+          name: F
+      Value2: 
+    - Key: 1
+      Value1:
+        _dataList:
+        - index: 1
+          name: A
+        - index: 1
+          name: B
+        - index: 1
+          name: C
+        - index: 2
+          name: D
+        - index: 2
+          name: E
+        - index: 2
+          name: F
+      Value2: 
+    - Key: 2
+      Value1:
+        _dataList:
+        - index: 1
+          name: A
+        - index: 1
+          name: B
+        - index: 1
+          name: C
+        - index: 2
+          name: D
+        - index: 2
+          name: E
+        - index: 2
+          name: F
+      Value2: 
+  _data: {fileID: 11400000, guid: 2a26437d133894a46ab19b9d2c12dec1, type: 2}

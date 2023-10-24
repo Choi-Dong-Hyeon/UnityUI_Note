@@ -28,4 +28,4 @@ MonoBehaviour:
   _copy: []
   _dataDic:
     array: []
-  aaa: 
+  data: {fileID: 0}

@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf94e602a8d7ff40b97227a2d73d0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: 10
+  s: {fileID: 0}
+  t: {fileID: 0}
 --- !u!4 &692049103
 Transform:
   m_ObjectHideFlags: 0
@@ -523,6 +524,7 @@ GameObject:
   - component: {fileID: 2106699982}
   - component: {fileID: 2106699981}
   - component: {fileID: 2106699980}
+  - component: {fileID: 2106699983}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -595,9 +597,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 698ad5b9b63474b4798e7949b318b9db, type: 2}
+      - m_Target: {fileID: 11400000, guid: 743dbcfda1cb8b64a9fc781bd15e93d5, type: 2}
         m_TargetAssemblyTypeName: Data, Assembly-CSharp-Editor
-        m_MethodName: SetData
+        m_MethodName: UpdateData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -645,6 +647,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106699978}
   m_CullTransparentMesh: 1
+--- !u!114 &2106699983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106699978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf94e602a8d7ff40b97227a2d73d0e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s: {fileID: 0}
+  t: {fileID: 11400000, guid: 2a26437d133894a46ab19b9d2c12dec1, type: 2}
 --- !u!1 &2126983538
 GameObject:
   m_ObjectHideFlags: 0
